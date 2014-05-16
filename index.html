@@ -6,75 +6,33 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <title>Exeter College My eILP</title>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/easy-ticker.js"></script>
         <script type="text/javascript">
-        $(document).ready(function(){
-            app.initialize();
+            $(document).ready(function(){
+                app.initialize();
 
-            var i = 0;
-            $.get("http://www.exe-coll.ac.uk/News/rss.aspx?Type=RSS", function(data) {
-                $("#newslist").empty();
-                var $xml = $(data);
-                $xml.find("item").each(function() {
-                    var $this = $(this),
-                        item = {
-                            title: $this.find("title").text(),
-                            link: $this.find("link").text(),
-                            description: $this.find("description").text(),
-                            pubDate: $this.find("pubDate").text(),
-                            author: $this.find("author").text()
-                    }
-                    
-                    $("#newslist").append("<li><a href=\""+item.link+"\" style=\"padding:1em; font-size:1.2em; display:block; color:#000030\">"+item.title+"</a></li>")
 
-                });
             });
-
-            $("#newsarea").easyTicker({direction:"up", speed:"slow", interval:4000, visible:1});
-
-        });
         </script>
     </head>
-    <body>
+    <body style="background-image: url('img/bg2.jpg'); background-color:#0066CC; background-repeat:no-repeat;
+background-size:cover;
+">
+    
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-
-            <div class="row-fluid">
-                <div class="span3">&nbsp;</div>
-                <div class="span6" style="text-align:center"><img src="img/EC LOGO_NS NStrap CMYK 600.jpg" alt=""></div>
-                <div class="span3">&nbsp;</div>
-            </div>
-            <div class="row-fluid">
-                    <div class="span6">
-                    <a href="https://mis-stud.exe-coll.ac.uk/myeilp/index.php" style="font-size:2em; margin-top:1em; padding:1em; display:block; text-align:center; color:#FFFFFF; background-color:#008FFF">My eILP</a>
-                    </div>
-                    <div class="span6">
-                    <a href="http://www.exe-coll.ac.uk" style="font-size:2em; margin-top:1em; padding:1em; display:block; text-align:center; color:#FFFFFF; background-color:#8CCBFF">Website</a>
-                    </div>
-            </div>
-            <br>
-            <div class="row-fluid">
-                <div class="span12">
-                    <h2 style="font-weight:normal; border-bottom:2px solid #8CCBFF"><span style="background-color:#8CCBFF; color:#FFFFFF; padding: 0.25em; margin-bottom:0px;">College News</span></h2>
-
-                    <div id="newsarea" style="border-bottom:2px solid #8CCBFF">
-                        <ul id="newslist" style="margin-top: 0.5em;"><li style="padding:1em; font-size:1.2em; display:block;">Loading News Items</li></ul>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row-fluid">
-                <div class="span12">  
-                    <br><br>
-                    <center><img src="img/pm.png"></center>
-                    <center>&copy; 2014 Exeter College</center>
-                </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Exeter College - My eILP</a>
             </div>
         </div>
+    </nav>
+    
+
+    <a href="https://mis-stud.exe-coll.ac.uk/myeilp/index.php?app=1" style="position:fixed; left: 15%; width:70%; bottom:8%; padding: .5em; font-size: 2.5em; display:block; background-color:#0066CC; text-align:center; color: #FFFFFF; text-decoration:none;" id="login_link"> Login </a>
+
+    <a href="https://mis-stud.exe-coll.ac.uk/myeilp/index.php?app=1" style="position:fixed; left: 15%; width:70%; bottom:1%; padding: .5em; font-size: 1em;text-align:center; color: #DDDDDD; text-decoration:none; background-color: #DDDDDD; color:#444444"> &copy; 2014 Exeter College </a>
+
     </body>
 </html>

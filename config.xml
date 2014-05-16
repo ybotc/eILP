@@ -6,10 +6,10 @@
 	id = "com.phonegap.hello-world"
 	version = "1.0.0">
 
-<name>My eILP</name>
+<name>Dashboard</name>
 
 <description>
-Exeter College - My eILP
+Exeter College Enrolment Dashboard
 </description>
 
 
