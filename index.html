@@ -49,9 +49,9 @@ background-size:cover;
 
     
     <script>
-    if(localStorage.getItem("piccy") !== null)
+    if(localStorage.getItem("refno") !== null)
     {
-        document.getElementById("pic").src = localStorage.getItem("piccy");
+      //  document.getElementById("pic").src = localStorage.getItem("piccy");
         document.getElementById("card_sref").innerHTML = localStorage.getItem("refno");
         document.getElementById("card_stuname").innerHTML = localStorage.getItem("stuname");
     }
