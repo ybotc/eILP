@@ -49,6 +49,12 @@ background-size:cover;
 
     
     <script>
+    
+        
+      document.getElementById("card_sref").innerHTML = localStorage.getItem("refno");
+      document.getElementById("card_stuname").innerHTML = localStorage.getItem("stuname");
+        
+    /*    
     if(localStorage.getItem("refno") !== null)
     {
       //  document.getElementById("pic").src = localStorage.getItem("piccy");
@@ -57,8 +63,11 @@ background-size:cover;
     }
     else
     {
-        document.getElementById("idcard").style.display = "none";
+       document.getElementById("idcard").style.display = "none";
     }
+    */
+        
+        
     </script>
 
     </body>
