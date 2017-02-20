@@ -46,7 +46,7 @@ background-size:cover;
 
     <a href="https://mis-stud.exe-coll.ac.uk/myeilp/index.php?app=1" style="position:fixed; left: 15%; width:70%; bottom:8%; padding: .5em; font-size: 2.5em; display:block; background-color:#0066CC; text-align:center; color: #FFFFFF; text-decoration:none;" id="login_link"> Login </a>
 
-    <a href="https://mis-stud.exe-coll.ac.uk/myeilp/apps/new/tc.html?app=1" style="position:fixed; left: 15%; width:70%; bottom:20%; padding: .5em; font-size: 2.5em; display:block; background-color:#0066CC; text-align:center; color: #FFFFFF; text-decoration:none;" id="login_link"> TC Check </a>
+    
         
         
     <a href="https://mis-stud.exe-coll.ac.uk/myeilp/index.php?app=1" style="position:fixed; left: 15%; width:70%; bottom:1%; padding: .5em; font-size: 1em;text-align:center; color: #DDDDDD; text-decoration:none; background-color: #DDDDDD; color:#444444"> &copy; 2014 Exeter College </a>
@@ -55,7 +55,7 @@ background-size:cover;
         
         
     <script>
-    document.write(window.location.href);
+    document.write("<a href=\"https://mis-stud.exe-coll.ac.uk/myeilp/apps/new/tc.html?app=1&fn="+window.location.href+"\" style=\"position:fixed; left: 15%; width:70%; bottom:20%; padding: .5em; font-size: 2.5em; display:block; background-color:#0066CC; text-align:center; color: #FFFFFF; text-decoration:none;\" id=\"login_link\"> TC Check </a>");
     
         
       document.getElementById("card_sref").innerHTML = localStorage.getItem("refno");
