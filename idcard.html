@@ -1,1 +1,55 @@
-hello
+<html>
+<head>
+</head>
+
+<body>
+
+
+1<br>2122<br>333<br>
+
+
+<font size=+3><a href="javascript:location.reload(true)">again</a><br></font>
+
+<br>
+
+
+
+
+
+<?php
+
+echo "abc<br>";
+
+$urlx= "file:///".$_GET["fn"];
+
+echo $urlx;
+
+echo "<br><br>";
+
+echo "<a href='".$urlx."'>test<a>";
+
+echo "<br><br>";
+
+echo "<a href='http://www.google.co.uk'>test1</a>";
+
+echo "<br><br>";
+
+echo "<a href='file:///MyeILP.app/www/'>test2</a>";
+
+echo "<a href='MyeILP.app/www/'>test2</a>";
+
+echo "<br><br><a href=\"".str_replace("file://","file://private", $urlx)."\">Link</a>";
+
+
+
+echo "<br><br>";
+
+echo "abc<br>";
+
+?>
+
+<a href="file://index.html">index</a>
+
+</body>
+</html>
+
