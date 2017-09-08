@@ -31,22 +31,11 @@ background-size:cover;
     </nav>
     
 
-    <div style="width: 85mm; height: 55mm; border:1px solid black; position:relative; padding:0px; font-family:Arial; background-color:white; z-index:-101" id="idcard">
-        <img src="img/CARDBG_1617.png" style="position:absolute; top:0px; left:0px; width:100%; height:37mm; z-index: -100;">
-        <img src="img/ec_bg.gif" style="position:absolute; top:0px; width: 85mm; left:6px; height:37mm; z-index: -98;">
-        <img src="/student_photos/unk.jpg" id="pic" style="position:absolute; top:7px; width: 27mm; left:215px; height:32mm; z-index: -96;">
-        <h1 style="font-size: 13pt; font-weight:bold; position:absolute; top:-5px; left:7px; z-index: 1; font-family: Arial">2016 / 2017 Student Card</h1>
-        <h2 style="font-size: 10pt; font-weight:bold; position:absolute; top:12px; left:7px;  z-index: 1; font-family: Arial"><span id="card_sref">0000000000</span></h2>
-        <h2 style="font-size: 9pt; font-weight:normal; position:absolute; top:28px; left:7px;  z-index: 1; font-family: Arial"><span id="card_stuname">Unknown Student</span></h2>
-        <h2 style="font-size: 8pt; font-weight:normal; position:absolute; top:118px; left:215px; z-index: 1; font-family: Arial"><span id="card_password"></span></h2>
-        <h2 style="font-family: 'APM Code 39 Low'; font-weight: normal; font-size:24pt; position:absolute; top:145px; margin:0em !important; padding:0em !important; left:10px;">*<span id="card_bc_sref">0000000000</span>*</h2>
-    </div>
-
 
 
     <a href="https://mis-stud.exe-coll.ac.uk/myeilp/index.php?app=1" style="position:fixed; left: 15%; width:70%; bottom:8%; padding: .5em; font-size: 2.5em; display:block; background-color:#0066CC; text-align:center; color: #FFFFFF; text-decoration:none;" id="login_link"> Login </a>
 
-    <a href="idcard.html" style="position:fixed; left: 15%; width:70%; bottom:60%; padding: .5em; font-size: 2.5em; display:block; background-color:#0066CC; text-align:center; color: #FFFFFF; text-decoration:none;" id="login_link1">id card </a>
+    
 
     
         
@@ -58,7 +47,7 @@ background-size:cover;
         
     <script>
     // document.write("<a href=\"https://mis-stud.exe-coll.ac.uk/myeilp/apps/new/tc.php?app=1&fn="+window.location.href.substr(8)+"\" style=\"position:fixed; left: 15%; width:70%; bottom:20%; padding: .5em; font-size: 2.5em; display:block; background-color:#0066CC; text-align:center; color: #FFFFFF; text-decoration:none;\" id=\"login_link\"> TC Check </a>");
-   document.write(window.location.href);
+
         
         
       document.getElementById("card_sref").innerHTML = localStorage.getItem("refno");
